@@ -1,0 +1,25 @@
+# This is a placeholder for the Kubernetes deployment manifest.
+# In a real implementation, this would be a more complex file that defines
+# the deployment, service, and other resources needed to run the application
+# in a Kubernetes cluster.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cgemini
+  labels:
+    app: cgemini
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cgemini
+  template:
+    metadata:
+      labels:
+        app: cgemini
+    spec:
+      containers:
+      - name: cgemini
+        image: cgemini:latest
+        ports:
+        - containerPort: 8080

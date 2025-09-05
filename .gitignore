@@ -1,0 +1,24 @@
+# === Common ignores ===
+# Node / JS
+node_modules/
+dist/
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Go
+bin/
+*.test
+
+# General
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
